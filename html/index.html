@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>HTML</title>
+    
+    <style> 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+     body {
+background-image: linear-gradient(to right, white, blue);
+}
+
+h1 {
+  font: italic bolder 3em Oswald;
+  text-align: center;
+}
+
+h2{
+  text-align: left;
+}
+
+p {
+  text-align: justify;
+  text-indent: 20px; 
+}
+
+div{
+background-color: lightgray;
+text-align: center;
+display: inline-block;
+width: 200px;
+height: 200px;
+border: 1px solid black;
+}
+
+div:hover{
+  background-color: aquamarine;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:visited{
+  color: red;
+}
+
+a:active {
+  color: blue;
+}
+
+.especial{
+  background-color: rgb(0, 90, 60);
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav {
+background-color: beige;
+padding: 3px;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.471);
+}
+
+nav > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-right: 30px;
+
+}
+
+main {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px 0px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.471);
+
+}
+
+article{
+  background-color: antiquewhite;
+}
+
+article > aside {
+  background-color: rgb(69, 241, 241);
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  margin: 0px;
+}
+
+footer > p {
+  margin: 0px;
+}
+
+</style>
+<!--font-style, font-weight, font-size, font-family= usar nessa ordem-->
+<!--text-indent= paragrafo-->
+<!--text-aling= deixa na posiçoa que vc quer-->
+<!--width= largura-->
+<!--height= altura-->
+
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--Titulo-->
+    <hr> <!--Coloca uma linha horizontal-->
+    <p>Estou testando alguns ensinamentos que eu aprendi ao longo da minha jornada de estudos.</p> <!--Paragrafo-->
+
+    <h1>Imagens</h1>
+    <p>imagem na mesma pasta</p>
+    <img src="fotos/vi200.png" alt="VI ARCANE">
+    <img src="https://i.ytimg.com/vi/GlMd47yRos4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLArJit7y9KwiLkT5tgI3dFotshhSA">
+
+    <h1>icone fav</h1>
+    <p>olha lá em cima</p>
+    <p>Muita gente não sabe, mas no comando dá para fazer com imagens sem precisar editar. Basta fazer essa alteração no código: <br>
+
+    <!--link rel="shortcut icon" href="imagem.png" type="image/x-icon-->
+        
+       <br> Colocando type="image/x-icon" o vscode vai compactar a imagem, para que dê certo a imagem precisa ser PNG, e para que funcione de certeza, basta alterar o tamanho da imagem (dimensão) para 16x16 (usar kimp).</p>
+
+       <h1>ARCANE</h1>
+       <h2>introdução 1</h2>
+       <h3>começo 1</h3>
+       <p>ipsum dolor sit amet consectetur adipisicing elit. Doloribus totam voluptate odio aliquam at nesciunt beatae neque. Unde odit quisquam a natus asperiores quibusdam, sint ducimus, nam, vel doloremque dicta!</p> 
+       <h3>começo 2</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est consequuntur molestias eius veritatis magni sint debitis? Quibusdam nemo, dolorem explicabo sequi earum magni recusandae tenetur, eos fugiat officia architecto.</p>
+
+       
+       <h2>introdução 2</h2>
+       <h3>começo 3</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore perspiciatis deleniti accusantium. Eos harum, illo odio explicabo, reiciendis adipisci repellendus fugit omnis obcaecati unde asperiores, expedita sed facilis eligendi!</p>
+       <h4>aprendendo</h4>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reprehenderit harum quam dicta? Minus ad nam nesciunt suscipit reiciendis dolorem ex corporis, officiis, magnam fugiat voluptas facere! Voluptatibus, dolores eos!</p>
+
+       <!--tem ate h6, não tem mais niveis além disso-->
+
+       <h1>formatações</h1>
+       <h2>negrito</h2>
+       <p>nessa frase temos um termo em <b>negrito</b> não semantico usando a tag B</p>
+       <p>nessa frase temos um termo em <strong>negrito</strong> semantica usando a tag strong</p>
+
+       <h2>Italico</h2>
+       <p>nessa frase temos um termo em <i>Italico</i> nao semantica usando a tag I</p>
+       <p>nessa frase temos um termo em <em>Italico</em> semantica usando a tag EM</p>
+
+       <h2>texto marcado</h2>
+       <p>texto marcado divo <mark>demais</mark></p>
+
+       <h2>texto grande e pequeno</h2>
+       <P>aqui tera textos <big>grandes</big> e <small>pequenos</small></P>
+
+       <h2>texto deletado</h2>
+       <p>aqui voce <del>verá</del></p>
+
+       <h2>texto inserido</h2>
+       <p>veja agora ele <ins>inserido</ins></p>
+
+       <h2>texto sublinhado</h2>
+       <p>veja ele <u>sublinhado</u> </p>
+
+       <h2>texto sobrescrito</h2>
+       <p>agora para finalizar, x<sup>20</sup>+3</p>
+
+       <h2>texto sobscrito</h2>
+       <p>para colocar H<sub>2</sub>O</p>
+
+       <h2>codigo fonte<h2>
+        <P>o comando <code>document.getElement</code> é escrito em JS</P>
+
+        <pre>
+        <code>
+        num= jdye sidjeh 
+
+        </code>
+        </pre>
+
+       <h2>citação simples</h2>
+       <P>scomo diria as mães: <q>vc não é todo mundo</q></P>
+       
+       <h2>citação completas</h2>
+       <P>segundo fulano no livro tal</P>
+       <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam vitae nesciunt velit eaque, unde possimus eos natus, maiores quas dolorem! Fuga dolorem voluptas at eius dolores, porro autem distinctio?</blockquote>
+       
+       <h2>abreviações</h2>
+       <P>estou estudando <abbr title="hypertext markup language">html</abbr> estou amando</P>
+       
+       <h2>texto intertido</h2>
+       <p><bdo dir="rlt">estou aprendendo html</bdo></p>
+
+       <h1>listas</h1> <!--1 A a I i-->
+       <h2>listas ordenadas</h2>
+       <ol>
+       <li>acordar</li>
+       <li>comer</li>
+       <li>ir para escola</li>
+       <li>estudar</li>
+       <li>voltar pra casa</li>
+    </ol>
+
+       <h2>listas nao ordenadas</h2> <!--disc circle square-->
+     <ul>
+       <li>acordar</li>
+       <li>comer</li>
+       <li>ir para escola</li>
+       <li>estudar</li>
+       <li>voltar pra casa</li>
+
+       <h2>Juntando listas v1</h2>
+       <ol>
+        <li>antigas</li>
+        <ol type="a">
+          <li>clipper</li>
+          <li>delph</li>
+          <li>vscode</li>
+        </ol>
+
+        <li>novas</li>
+        <ol type="a">
+          <li>php</li>
+          <li>pyton</li>
+          <li>javascript</li>
+          <ol type="circle">
+            <li>estou aprendendo agora</li>
+            <li>é um pouco dificil</li>
+          </ol>
+        </ol>
+
+        <h2>Lista de definições</h2>
+        <dl>
+        <dt>HTML</dt> <!--termo-->
+        <dd>esqueleto do site</dd> <!--descrição-->
+        <dt>CSS</dt>
+        <dd>corpo do site</dd>
+      </dl>
+       </ol>
+    </ul>
+
+    <h2>links externos</h2>
+    <p>acesse meu repositorio no <a href="https://github.com/jessiepsx/" target="_blank" rel="external">github</a></p>
+       
+
+    <h2>links internos</h2>
+    <p> esta é minha primeira pagina, se quiser ir pra segunda <a href="p1.html" rel="next" target="_self"> clicar aqui </a></p>
+ 
+    <h2>links para download</h2>
+    <li><a href="livro/ebook.pdf" download="ebook.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+
+    <h1>imagens dinamicas</h1>
+    <P>tente abrir esse site em varios dispositivos ou so diminua o tamanho do navegador</P>
+
+    <picture>
+      <source media="(max-width: 750px)" srcset="fotos/fotop.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="fotos/fotom.png" type="image/png">
+   <img src="fotos/fotog.png" alt="foto flexivel">
+ 
+   <!--sempre deixar na ordem p,m,g-->
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios no HTML</p>
+    <audio src="midia/readmylips.mp3.mp3" controls></audio>
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>este video esta hospedado no meu próprio servidor</p>
+    <video src="midia/show.mp4" width="500" controls loop></video>  <!--consome dinheiro-->
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315"src="https://www.youtube.com/embed/orxCH7LzJ9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+   <!--nao consome dinheiro-->
+
+   <h1>Estilos Inline</h1>
+   <hr>
+   <h1>Capitulo 1</h1>
+   <h2>Capitulo 1.1</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae, amet ex est ullam recusandae commodi dolore quas! Magni assumenda expedita nam itaque eaque nesciunt aliquid voluptates reprehenderit culpa porro.</p>
+
+   <h2>Capitulo 1.2</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, qui! Sunt eveniet dolor porro a! Exercitationem expedita, inventore ipsam, officia, perferendis nemo illo dolores qui aliquid culpa eos id tenetur?</p>
+
+   <h1>Capitulo 2</h1>
+   <h2>Capitulo 2.1</h2>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos velit repudiandae recusandae. Incidunt, repellendus? Odio odit sequi, dolore asperiores repellendus exercitationem quos doloribus voluptates porro possimus omnis, libero neque eius.</p>
+
+   <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: lighter;" >Testando com fontes </h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum beatae excepturi distinctio laudantium assumenda debitis, atque sapiente quibusdam veritatis officiis, ullam consequatur reprehenderit at iste quidem totam inventore libero cupiditate!</p>
+   <!--lighter normal bold bolder= usar no peso (font-weight)-->
+
+   <h1>fontes com google fonts</h1> <!--no style com @import-->
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa facilis laborum, voluptatibus temporibus commodi reiciendis expedita consequatur nesciunt deleniti sapiente cumque quam, odio culpa deserunt maxime numquam nostrum optio incidunt?</p>
+
+   <h1> tipos de alinhamentos</h1>
+   <h2>subtitulo</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, cumque, iusto tenetur laudantium dolor voluptas nisi quae sit culpa molestiae, aperiam quisquam magni eligendi doloremque totam recusandae quam. Officiis, earum!</p>
+
+   <h1>pseudo-classes</h1>
+   <div>01</div>
+   <div>02</div>
+   <div>03</div>
+
+   <h1>personalizando links</h1>
+   <ul>
+   <li><a href="https://github.com/jessiepsx/" class="especial">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/jéssica-pereira-bb1202265">Linkedln</a></li>
+  <li><a href="https://instagram.com/jessiepsx/">Instagram</a></li>
+   </ul>
+
+   <h1>Modelo de caixas</h1>
+   <h2>exemplo de caixas box-level</h2>
+   <p>paragrafos tbm sao exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver com tudo isso funciona.</p>
+
+
+  <header>
+   <h1>Grouping Tags</h1>
+   <nav>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+   </nav>
+  </header>
+
+  <main>
+    <section id="assuntos">
+      <p>esportes e tecnologia</p>
+    </section>
+
+    <section id="noticias">
+      <article>
+        <h2>noticias</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolor inventore repellat dignissimos a voluptatum. Dolorum nisi ullam aut ratione tempore ducimus, minus dolorem possimus amet soluta perferendis numquam vero.</p>
+        <aside>
+          <p>artigo escrito por jess</p>
+        </aside>
+
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>desenvolvido pela jéssica</p>
+  </footer>
+
+  <h1> </h1>
+
+</body>
+ </html> 
