@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,th {
@@ -19,9 +20,24 @@
             padding: 10px;
         }
 
+        thead > tr > th {
+        position: sticky; /*colado o estado e a população no topo*/
+        top: -1px;
+        background-color: #383838;
+
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(odd){ /*2n-1*/
+         background-color: rgb(255, 255, 255);  /* odd= impar - even= par*/
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+         background-color: lightgray;  /* odd= impar - even= par*/
         }
 
         td.num {
@@ -34,6 +50,8 @@
             padding: 10px;
             background-color: lightgrey;
         }
+
+
     </style>
 </head>
 <body>
